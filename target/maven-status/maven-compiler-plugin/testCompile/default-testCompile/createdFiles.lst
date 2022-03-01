@@ -1,0 +1,9 @@
+guru\springfamework\domain\controllers\v1\AbstractRestControllerTest.class
+guru\springfamework\services\CustomerServiceImplITTest.class
+guru\springfamework\domain\controllers\v1\CategoryControllerTest.class
+guru\springfamework\domain\controllers\v1\CustomerControllerTest.class
+guru\springfamework\services\CustomerServiceTest.class
+guru\springfamework\api\v1\mapper\CategoryMapperTest.class
+guru\springfamework\spring5mvcrest\Spring5MvcRestApplicationTests.class
+guru\springfamework\api\v1\mapper\CustomerMapperTest.class
+guru\springfamework\services\CategoryServiceTest.class

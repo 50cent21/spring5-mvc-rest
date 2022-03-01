@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: guru.springfamework.domain.controllers.v1.CustomerControllerTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.639 s <<< FAILURE! - in guru.springfamework.domain.controllers.v1.CustomerControllerTest
+testGetCustomerById(guru.springfamework.domain.controllers.v1.CustomerControllerTest)  Time elapsed: 0.17 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.firstName"
+	at guru.springfamework.domain.controllers.v1.CustomerControllerTest.testGetCustomerById(CustomerControllerTest.java:91)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['firstName'] in path $ but found 'java.lang.String'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+	at guru.springfamework.domain.controllers.v1.CustomerControllerTest.testGetCustomerById(CustomerControllerTest.java:91)
+
+testListCustomers(guru.springfamework.domain.controllers.v1.CustomerControllerTest)  Time elapsed: 0.051 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.customers"
+	at guru.springfamework.domain.controllers.v1.CustomerControllerTest.testListCustomers(CustomerControllerTest.java:72)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['customers'] in path $ but found 'java.lang.String'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+	at guru.springfamework.domain.controllers.v1.CustomerControllerTest.testListCustomers(CustomerControllerTest.java:72)
+
+testPatchCustomer(guru.springfamework.domain.controllers.v1.CustomerControllerTest)  Time elapsed: 0.096 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.firstName"
+	at guru.springfamework.domain.controllers.v1.CustomerControllerTest.testPatchCustomer(CustomerControllerTest.java:162)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['firstName'] in path $ but found 'java.lang.String'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+	at guru.springfamework.domain.controllers.v1.CustomerControllerTest.testPatchCustomer(CustomerControllerTest.java:162)
+
+testUpdateCustomer(guru.springfamework.domain.controllers.v1.CustomerControllerTest)  Time elapsed: 0.047 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.firstName"
+	at guru.springfamework.domain.controllers.v1.CustomerControllerTest.testUpdateCustomer(CustomerControllerTest.java:138)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['firstName'] in path $ but found 'java.lang.String'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+	at guru.springfamework.domain.controllers.v1.CustomerControllerTest.testUpdateCustomer(CustomerControllerTest.java:138)
+
+testCreateCustomer(guru.springfamework.domain.controllers.v1.CustomerControllerTest)  Time elapsed: 0.071 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.firstName"
+	at guru.springfamework.domain.controllers.v1.CustomerControllerTest.testCreateCustomer(CustomerControllerTest.java:114)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['firstName'] in path $ but found 'java.lang.String'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+	at guru.springfamework.domain.controllers.v1.CustomerControllerTest.testCreateCustomer(CustomerControllerTest.java:114)
+

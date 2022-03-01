@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: guru.springfamework.domain.controllers.v1.CategoryControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.238 s <<< FAILURE! - in guru.springfamework.domain.controllers.v1.CategoryControllerTest
+testListCategories(guru.springfamework.domain.controllers.v1.CategoryControllerTest)  Time elapsed: 2.772 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.categories"
+	at guru.springfamework.domain.controllers.v1.CategoryControllerTest.testListCategories(CategoryControllerTest.java:68)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['categories'] in path $ but found 'java.lang.String'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+	at guru.springfamework.domain.controllers.v1.CategoryControllerTest.testListCategories(CategoryControllerTest.java:68)
+
+testGetByNameCategories(guru.springfamework.domain.controllers.v1.CategoryControllerTest)  Time elapsed: 0.169 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.name"
+	at guru.springfamework.domain.controllers.v1.CategoryControllerTest.testGetByNameCategories(CategoryControllerTest.java:82)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['name'] in path $ but found 'java.lang.String'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+	at guru.springfamework.domain.controllers.v1.CategoryControllerTest.testGetByNameCategories(CategoryControllerTest.java:82)
+
